@@ -1,6 +1,8 @@
 # Flip Cards
 
-
+- Auto layout
+- rotation
+- Stack view
 
 ### # before click
 
