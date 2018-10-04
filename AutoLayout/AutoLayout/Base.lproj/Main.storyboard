@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -105,7 +104,6 @@
                                     <constraint firstItem="xPY-JT-v5m" firstAttribute="top" secondItem="pRC-UW-OzO" secondAttribute="top" constant="226" id="ZW9-n0-qP5"/>
                                     <constraint firstAttribute="bottom" secondItem="xeY-Fa-pRL" secondAttribute="bottom" constant="231" id="ac2-Ee-xJ6"/>
                                     <constraint firstItem="OGL-We-OH0" firstAttribute="centerX" secondItem="pRC-UW-OzO" secondAttribute="centerX" id="dwt-kj-DfO"/>
-                                    <constraint firstAttribute="bottom" secondItem="cNM-ss-DKn" secondAttribute="bottom" constant="742" id="ew2-Xx-6M1"/>
                                     <constraint firstAttribute="trailing" secondItem="cNM-ss-DKn" secondAttribute="trailing" constant="21" id="iPW-zS-9QP"/>
                                     <constraint firstAttribute="bottom" secondItem="rHp-39-Cwk" secondAttribute="bottom" constant="20" id="j06-LY-N0g"/>
                                 </constraints>
@@ -121,6 +119,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
         </scene>
