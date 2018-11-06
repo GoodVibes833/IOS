@@ -7,16 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C414BD2F21824BF7003E03D0 /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = C414BD2921824BF7003E03D0 /* Brandon_bld.otf */; };
+		C414BD3021824BF7003E03D0 /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C414BD2A21824BF7003E03D0 /* Brandon_light.otf */; };
+		C414BD3121824BF7003E03D0 /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = C414BD2B21824BF7003E03D0 /* Brandon_blk.otf */; };
+		C414BD3221824BF7003E03D0 /* Brandon_thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C414BD2C21824BF7003E03D0 /* Brandon_thin.otf */; };
+		C414BD3321824BF7003E03D0 /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = C414BD2D21824BF7003E03D0 /* Brandon_med.otf */; };
+		C414BD3421824BF7003E03D0 /* Brandon_reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = C414BD2E21824BF7003E03D0 /* Brandon_reg.otf */; };
 		CB69A0C8217A52BC00A5A619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69A0C7217A52BC00A5A619 /* AppDelegate.swift */; };
 		CB69A0CA217A52BC00A5A619 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69A0C9217A52BC00A5A619 /* ViewController.swift */; };
 		CB69A0CD217A52BC00A5A619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB69A0CB217A52BC00A5A619 /* Main.storyboard */; };
 		CB69A0CF217A52BE00A5A619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB69A0CE217A52BE00A5A619 /* Assets.xcassets */; };
 		CB69A0D2217A52BE00A5A619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB69A0D0217A52BE00A5A619 /* LaunchScreen.storyboard */; };
+		CBAE12C72192000300D1C6AD /* CalorieCalculatorCore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAE12C52192000300D1C6AD /* CalorieCalculatorCore.xcdatamodeld */; };
 		CBF223752182386F008ED7D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF223742182386F008ED7D8 /* User.swift */; };
 		CBF2237721823A83008ED7D8 /* InputPersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2237621823A83008ED7D8 /* InputPersonalInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C414BD2921824BF7003E03D0 /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		C414BD2A21824BF7003E03D0 /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
+		C414BD2B21824BF7003E03D0 /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
+		C414BD2C21824BF7003E03D0 /* Brandon_thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin.otf; sourceTree = "<group>"; };
+		C414BD2D21824BF7003E03D0 /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
+		C414BD2E21824BF7003E03D0 /* Brandon_reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg.otf; sourceTree = "<group>"; };
 		CB69A0C4217A52BC00A5A619 /* CalorieCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB69A0C7217A52BC00A5A619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB69A0C9217A52BC00A5A619 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +37,7 @@
 		CB69A0CE217A52BE00A5A619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB69A0D1217A52BE00A5A619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB69A0D3217A52BE00A5A619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAE12C62192000300D1C6AD /* CalorieCalculatorCore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalorieCalculatorCore.xcdatamodel; sourceTree = "<group>"; };
 		CBF223742182386F008ED7D8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CBF2237621823A83008ED7D8 /* InputPersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPersonalInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +56,7 @@
 		CB69A0BB217A52BC00A5A619 = {
 			isa = PBXGroup;
 			children = (
+				CBAE12C52192000300D1C6AD /* CalorieCalculatorCore.xcdatamodeld */,
 				CB69A0C6217A52BC00A5A619 /* CalorieCalculator */,
 				CB69A0C5217A52BC00A5A619 /* Products */,
 			);
@@ -58,6 +73,12 @@
 		CB69A0C6217A52BC00A5A619 /* CalorieCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				C414BD2921824BF7003E03D0 /* Brandon_bld.otf */,
+				C414BD2B21824BF7003E03D0 /* Brandon_blk.otf */,
+				C414BD2A21824BF7003E03D0 /* Brandon_light.otf */,
+				C414BD2D21824BF7003E03D0 /* Brandon_med.otf */,
+				C414BD2E21824BF7003E03D0 /* Brandon_reg.otf */,
+				C414BD2C21824BF7003E03D0 /* Brandon_thin.otf */,
 				CB69A0CB217A52BC00A5A619 /* Main.storyboard */,
 				CBF223742182386F008ED7D8 /* User.swift */,
 				CBF2237621823A83008ED7D8 /* InputPersonalInfo.swift */,
@@ -130,7 +151,13 @@
 			files = (
 				CB69A0D2217A52BE00A5A619 /* LaunchScreen.storyboard in Resources */,
 				CB69A0CF217A52BE00A5A619 /* Assets.xcassets in Resources */,
+				C414BD3421824BF7003E03D0 /* Brandon_reg.otf in Resources */,
+				C414BD3221824BF7003E03D0 /* Brandon_thin.otf in Resources */,
+				C414BD3121824BF7003E03D0 /* Brandon_blk.otf in Resources */,
 				CB69A0CD217A52BC00A5A619 /* Main.storyboard in Resources */,
+				C414BD2F21824BF7003E03D0 /* Brandon_bld.otf in Resources */,
+				C414BD3021824BF7003E03D0 /* Brandon_light.otf in Resources */,
+				C414BD3321824BF7003E03D0 /* Brandon_med.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +170,7 @@
 			files = (
 				CB69A0CA217A52BC00A5A619 /* ViewController.swift in Sources */,
 				CB69A0C8217A52BC00A5A619 /* AppDelegate.swift in Sources */,
+				CBAE12C72192000300D1C6AD /* CalorieCalculatorCore.xcdatamodeld in Sources */,
 				CBF2237721823A83008ED7D8 /* InputPersonalInfo.swift in Sources */,
 				CBF223752182386F008ED7D8 /* User.swift in Sources */,
 			);
@@ -342,6 +370,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CBAE12C52192000300D1C6AD /* CalorieCalculatorCore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CBAE12C62192000300D1C6AD /* CalorieCalculatorCore.xcdatamodel */,
+			);
+			currentVersion = CBAE12C62192000300D1C6AD /* CalorieCalculatorCore.xcdatamodel */;
+			path = CalorieCalculatorCore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CB69A0BC217A52BC00A5A619 /* Project object */;
 }

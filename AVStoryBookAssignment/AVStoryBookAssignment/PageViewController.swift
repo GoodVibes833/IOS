@@ -14,7 +14,10 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
-        
+        setUp()
+    }
+
+    fileprivate func setUp() {
         let storyVC1 = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
         storyVC1.view.backgroundColor = #colorLiteral(red: 0, green: 0.339300932, blue: 0.7068895725, alpha: 1)
         pageCollection.append(storyVC1)
@@ -31,14 +34,8 @@ class PageViewController: UIPageViewController {
         storyVC4.view.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
         pageCollection.append(storyVC4)
         
-        
         setViewControllers([storyVC1], direction: .forward, animated: true, completion: nil)
-        
     }
-
-    
-    
-
 }
 
 
