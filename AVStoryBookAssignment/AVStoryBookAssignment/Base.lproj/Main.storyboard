@@ -34,6 +34,12 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="8az-QS-NDO"/>
+                                    <barButtonItem systemItem="add" id="Ea1-Ki-qEb">
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="D87-gx-gmg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="i4O-uJ-AkU"/>
                                     <barButtonItem title="🔴" id="ZHu-iS-geZ">
                                         <color key="tintColor" red="1" green="0.84742956020000004" blue="0.031855500889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -56,6 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="Ea1-Ki-qEb" id="e0y-JZ-dDh"/>
                         <outlet property="cameraButton" destination="uNe-4H-NF5" id="TYp-Qv-S0u"/>
                         <outlet property="recordButton" destination="ZHu-iS-geZ" id="jdJ-3p-S78"/>
                         <outlet property="recordButtonTapped" destination="ZHu-iS-geZ" id="Fbd-m4-9XX"/>

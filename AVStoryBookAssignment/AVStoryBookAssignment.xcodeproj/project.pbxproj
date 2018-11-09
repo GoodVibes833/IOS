@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB91799721934FDE00598FF0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB91799521934FDE00598FF0 /* Model.xcdatamodeld */; };
+		CB91799D219351B700598FF0 /* Page+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91799B219351B700598FF0 /* Page+CoreDataClass.swift */; };
+		CB91799E219351B700598FF0 /* Page+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91799C219351B700598FF0 /* Page+CoreDataProperties.swift */; };
 		CBFCAD72218B59B400348387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFCAD71218B59B400348387 /* AppDelegate.swift */; };
 		CBFCAD74218B59B400348387 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFCAD73218B59B400348387 /* StoryViewController.swift */; };
 		CBFCAD77218B59B400348387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFCAD75218B59B400348387 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB91799621934FDE00598FF0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CB91799B219351B700598FF0 /* Page+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB91799C219351B700598FF0 /* Page+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CBFCAD6E218B59B400348387 /* AVStoryBookAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVStoryBookAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFCAD71218B59B400348387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBFCAD73218B59B400348387 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +46,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB91799F219352DD00598FF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBFCAD71218B59B400348387 /* AppDelegate.swift */,
+				CBFCAD78218B59B700348387 /* Assets.xcassets */,
+				CBFCAD7A218B59B700348387 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9179A02193530500598FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB91799B219351B700598FF0 /* Page+CoreDataClass.swift */,
+				CB91799C219351B700598FF0 /* Page+CoreDataProperties.swift */,
+				CB91799521934FDE00598FF0 /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CBFCAD65218B59B400348387 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +86,11 @@
 		CBFCAD70218B59B400348387 /* AVStoryBookAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				CB91799F219352DD00598FF0 /* Supporting Files */,
+				CB9179A02193530500598FF0 /* Model */,
 				CBFCAD75218B59B400348387 /* Main.storyboard */,
 				CBFCAD83218B5A5C00348387 /* PageViewController.swift */,
 				CBFCAD73218B59B400348387 /* StoryViewController.swift */,
-				CBFCAD71218B59B400348387 /* AppDelegate.swift */,
-				CBFCAD78218B59B700348387 /* Assets.xcassets */,
-				CBFCAD7A218B59B700348387 /* LaunchScreen.storyboard */,
 				CBFCAD7D218B59B700348387 /* Info.plist */,
 			);
 			path = AVStoryBookAssignment;
@@ -150,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB91799E219351B700598FF0 /* Page+CoreDataProperties.swift in Sources */,
 				CBFCAD84218B5A5C00348387 /* PageViewController.swift in Sources */,
 				CBFCAD74218B59B400348387 /* StoryViewController.swift in Sources */,
 				CBFCAD72218B59B400348387 /* AppDelegate.swift in Sources */,
+				CB91799721934FDE00598FF0 /* Model.xcdatamodeld in Sources */,
+				CB91799D219351B700598FF0 /* Page+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB91799521934FDE00598FF0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB91799621934FDE00598FF0 /* Model.xcdatamodel */,
+			);
+			currentVersion = CB91799621934FDE00598FF0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CBFCAD66218B59B400348387 /* Project object */;
 }

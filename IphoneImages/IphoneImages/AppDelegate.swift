@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AVStoryBookAssignment
+//  IphoneImages
 //
-//  Created by Alex Jintak Han on 2018-11-01.
+//  Created by Alex Jintak Han on 2018-11-09.
 //  Copyright © 2018 AlexHan. All rights reserved.
 //
 

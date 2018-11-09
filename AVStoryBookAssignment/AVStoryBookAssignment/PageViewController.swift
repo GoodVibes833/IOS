@@ -7,34 +7,55 @@
 //
 
 import UIKit
+import CoreData
 
 class PageViewController: UIPageViewController {
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    private var pages = [Page]()
     private var pageCollection = [StoryViewController]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
+    
         setUp()
+        
+        let request: NSFetchRequest<Page> = Page.fetchRequest()
+        do{
+            pages = try context.fetch(request)
+        }catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
+        if pages.count == 0{
+            let storyVC = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
+            
+            storyVC.view.backgroundColor = .red
+            storyVC.delegate = self
+            pageCollection.append(storyVC)
+        }else{
+            setUp()
+        }
+        setViewControllers([pageCollection[0]], direction: .forward, animated: true, completion: nil)
+
     }
 
     fileprivate func setUp() {
-        let storyVC1 = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
-        storyVC1.view.backgroundColor = #colorLiteral(red: 0, green: 0.339300932, blue: 0.7068895725, alpha: 1)
-        pageCollection.append(storyVC1)
         
-        let storyVC2 = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
-        storyVC2.view.backgroundColor = #colorLiteral(red: 1, green: 0.1715849569, blue: 0.2132276923, alpha: 1)
-        pageCollection.append(storyVC2)
+        if pages.count > 0{
+            for i in 0..<pages.count{
+                let storyVC = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
+                storyVC.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                storyVC.delegate = self
+                storyVC.page = pages[i]
+                pageCollection.append(storyVC)
+            }
+        }
         
-        let storyVC3 = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
-        storyVC3.view.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
-        pageCollection.append(storyVC3)
+
         
-        let storyVC4 = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
-        storyVC4.view.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
-        pageCollection.append(storyVC4)
-        
-        setViewControllers([storyVC1], direction: .forward, animated: true, completion: nil)
     }
 }
 
@@ -64,4 +85,17 @@ extension PageViewController: UIPageViewControllerDataSource{
         return pageCollection[nextIndex]
     
     }
+    
+
+}
+
+extension PageViewController:AddStoryViewControllerDelegate{
+    func addStoryViewController() {
+        let storyVC = storyboard?.instantiateViewController(withIdentifier: "storyVC") as! StoryViewController
+        
+        storyVC.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        storyVC.delegate = self
+        pageCollection.append(storyVC)
+    }
+        
 }
